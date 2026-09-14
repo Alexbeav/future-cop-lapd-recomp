@@ -1,0 +1,54 @@
+[project]
+title = "Future Cop: L.A.P.D."
+region = "Europe"
+revision = "serial-bound source; retail revision not separately labeled"
+track = "recompilation"
+intended_audience = "player"
+commercial_use_possible = false
+representative_level = "existing aggregate package startup; full gameplay not claimed"
+
+[retail_identity]
+disc_count = 1
+serials = ["SLES-01449"]
+executable_paths = ["disc/SLES_014.49"]
+executable_sha256 = ""
+load_address = "0x80010000"
+entry_point = "0x80097208"
+
+[framework]
+name = "PSXRecomp"
+repository = "https://github.com/Alexbeav/psxrecomp.git"
+commit = "1eedb474442d9f2f7c42fac69d341118b05f8d22"
+tree = "604b784ed7c2443a6aaba555317cb15ef0ba57b6"
+recomp_ui_commit = "0d64752f305fb4d7d84fb6624a8493a41d7f45a3"
+license = "See the pinned dependency license; this binding does not approve commercial use."
+
+[release_binding]
+source_commit = "1eedb474442d9f2f7c42fac69d341118b05f8d22"
+current_title_version = "0.1.0"
+current_public_topology = "owned-input-kit-only"
+current_public_release = "none"
+current_package_platform = "none-promoted"
+manual_test = "operator-accepted-reported-symptoms-private-build-only"
+linux_qualification = "pending-exact-package-and-native-test"
+macos_qualification = "testing-waived-by-alex-2026-09-14; packaging-gates-still-apply"
+publication = "preparatory; public publication is a separate approval"
+retcomm_submission = "not-authorized"
+
+[limits]
+maximum_local_generated_gib = 20
+maximum_single_trace_gib = 8
+
+[paths]
+local_context = ".local-context"
+generated = "generated"
+captures = "out/captures"
+traces = "out/traces"
+packages = "dist"
+
+[release]
+version = "0.1.0"
+platform = "multi-platform"
+supported_platforms = ["windows-x64", "linux-x64", "macos-arm64", "macos-x64"]
+graduation_state = "bootstrap_verified"
+public_package_status = "not-published"

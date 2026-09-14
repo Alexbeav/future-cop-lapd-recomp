@@ -1,0 +1,31 @@
+{
+  "cue_path": "C:\\Users\\Alexbeav\\AppData\\Local\\Temp\\claude\\I--Projects-PSX-References\\4961cea7-88a8-425e-857a-0753b2ffa3e0\\scratchpad\\fc-chd\\Future Cop - L.A.P.D. (Europe) (En,Fr).cue",
+  "cue_name": "Future Cop - L.A.P.D. (Europe) (En,Fr).cue",
+  "bin_name": "Future Cop - L.A.P.D. (Europe) (En,Fr).bin",
+  "track_count": 1,
+  "data_track_size": 673104768,
+  "data_track_md5": "a25a51f497d45f41755d6849da262c19",
+  "data_track_sha1": "62791ea95e4e64a94dbe4d86bf49da45de415de0",
+  "data_track_crc32": "13e76e37",
+  "boot_exe": "SLES_014.49",
+  "serial": "SLES-01449",
+  "serial_exe": "SLES_014.49",
+  "volume_id": "SLES-01449",
+  "display_name": "Future Cop: L.A.P.D.",
+  "load_address": "0x80010000",
+  "entry_pc": "0x80097208",
+  "text_size": "0x00090800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "75cd17b0f0502c0dd6179b2db9f668034f5f3c05932648539abe9e90fef2c250",
+  "boot_exe_sha256": "d55fd72f8d53b7d9dad303ae57df1c163b13b37fcf62abc32be30830845f8bbd",
+  "seed_count": 1486,
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

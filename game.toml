@@ -1,0 +1,56 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Future Cop: L.A.P.D."
+id = "SLES-01449"
+players = 2
+exe = "disc/SLES_014.49"
+disc = "disc/Future Cop - L.A.P.D. (Europe) (En,Fr).cue"
+load_address = "0x80010000"
+entry_pc = "0x80097208"
+text_size = "0x00090800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Future Cop - L.A.P.D. (Europe) (En,Fr).bin"
+cue_name = "Future Cop - L.A.P.D. (Europe) (En,Fr).cue"
+boot_exe = "SLES_014.49"
+known_sizes = [673104768]
+known_md5 = [
+  "a25a51f497d45f41755d6849da262c19",
+]
+known_sha1 = [
+  "62791ea95e4e64a94dbe4d86bf49da45de415de0",
+]
+known_crc32 = [
+  "13e76e37",
+]
+
+[recompiler]
+bios_config = "bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+window_title = "Future Cop: L.A.P.D. Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "75cd17b0f0502c0dd6179b2db9f668034f5f3c05932648539abe9e90fef2c250"
