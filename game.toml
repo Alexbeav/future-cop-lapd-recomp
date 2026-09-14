@@ -30,7 +30,7 @@ known_crc32 = [
 ]
 
 [recompiler]
-bios_config = "bios/SCPH5552.toml"
+bios_config = "psxrecomp/bios/SCPH5552.toml"
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
