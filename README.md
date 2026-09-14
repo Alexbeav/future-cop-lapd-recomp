@@ -47,6 +47,18 @@ shares the portable toolchain used by per-title launchers, and automates
 BIOS/ROM/save plumbing so you are not stuck repeating each game’s wizard by hand.
 <!-- /retcomm-readme-launcher -->
 
+## Diagnostic mode
+
+If the game crashes, freezes, or misbehaves, switch to the diagnostic build
+that first-run setup already produced (no recompiling): create an empty file
+named `diagnostic-mode.txt` next to `Future_Cop_LAPD.exe` and start the game as
+usual, or run `Future_Cop_LAPD.exe --diagnostic`. Reproduce the problem, quit, then
+run `Future_Cop_LAPD.exe --collect-diagnostics`: it writes `diagnostics-<date>.zip`
+next to the exe. Attach that zip to a GitHub issue on this repository with a
+short description of what you did. The zip holds only the runtime's report
+files, never saves, BIOS, or disc images. Delete `diagnostic-mode.txt` to go
+back to normal mode. Details: `psxrecomp/docs/DIAGNOSTIC_MODE.md`.
+
 ## Legal
 
 You must own the original game. Disc images under `disc/` are gitignored and
