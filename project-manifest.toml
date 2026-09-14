@@ -20,7 +20,7 @@ name = "PSXRecomp"
 repository = "https://github.com/Alexbeav/psxrecomp.git"
 commit = "1eedb474442d9f2f7c42fac69d341118b05f8d22"
 tree = "604b784ed7c2443a6aaba555317cb15ef0ba57b6"
-recomp_ui_commit = "0d64752f305fb4d7d84fb6624a8493a41d7f45a3"
+recomp_ui_commit = "493434ab1893e8a80b8bf2bad0304da9110cf12b"
 license = "See the pinned dependency license; this binding does not approve commercial use."
 
 [release_binding]
